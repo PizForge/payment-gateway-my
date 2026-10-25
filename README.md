@@ -1,3 +1,6 @@
+**Live Site**
+https://alongfiz96-code.github.io/payment-gateway-my/
+
 # Compare Payment Gateways in Malaysia
 
 A static page for comparing payment gateways in Malaysia, including rates, fixed fees, settlement times, payment methods, and Shopify/WooCommerce support. Includes a monthly cost calculator.
@@ -6,7 +9,7 @@ A static page for comparing payment gateways in Malaysia, including rates, fixed
 
 Serve this folder over a local HTTP server because the page loads data from `data.json`. In VS Code, install the **Live Server** extension, then right-click `index.html` and select **Open with Live Server**. No build step or dependencies are required.
 
-In VS Code, install the **Live Server** extension for automatic previews.
+"To use the comparison, just open the live site above."
 
 ## Updating data
 
