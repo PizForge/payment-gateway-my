@@ -7,6 +7,7 @@ var tableBody = document.getElementById("rows");
 var query = document.getElementById("q");
 var emptyMessage = document.getElementById("empty");
 var loadError = document.getElementById("load-error");
+document.getElementById("report-rate").href = "https://github.com/" + REPO + "/issues/new?template=rate-report.md";
 
 function esc(value) {
   return value.replace(/[&<>"]/g, function (character) {
