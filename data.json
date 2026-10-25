@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2026-10-25",
+  "gateways": [
+    {
+      "n": "Stripe",
+      "r": "3% + RM1 (cards and FPX)",
+      "ratesChecked": "2026-10",
+      "f": "No setup or monthly fees",
+      "s": "5 to 7 days",
+      "b": "Cards, FPX, developers, and global payments. No DuitNow QR.",
+      "p": "WooCommerce: plugin available. Shopify: check availability.",
+      "t": ["fpx", "global", "nomonthly"]
+    },
+    {
+      "n": "Billplz",
+      "r": "FPX RM1.25 (Basic) or RM0.75 (Standard); cards 1.8%; wallets 1.5%",
+      "ratesChecked": "2026-10",
+      "f": "Basic is free; Standard is RM999/year",
+      "s": "FPX: next business day; cards: T+2",
+      "b": "Stores with a high volume of FPX payments.",
+      "p": "Integrations available for Shopify and WooCommerce.",
+      "t": ["fpx", "nomonthly"]
+    },
+    {
+      "n": "SenangPay",
+      "r": "Around 2.5%",
+      "ratesChecked": "2026-10",
+      "f": "Around RM50/month (estimated)",
+      "s": "Check the official website",
+      "b": "Easy onboarding, payment forms, and invoices.",
+      "p": "Check the official website.",
+      "t": ["fpx"]
+    },
+    {
+      "n": "HitPay",
+      "r": "FPX 1.8% + RM0.40 (online)",
+      "ratesChecked": "2026-10",
+      "f": "No setup or monthly fees",
+      "s": "DuitNow and e-wallets: T+2 days; cards and FPX: T+3 business days",
+      "b": "Online and physical stores, FPX, DuitNow QR, and Touch 'n Go.",
+      "p": "WooCommerce: plugin available. Shopify: check availability.",
+      "t": ["fpx", "duitnow", "global", "nomonthly"]
+    },
+    {
+      "n": "Fiuu (Razer Merchant Services)",
+      "r": "Not published; request a quote",
+      "ratesChecked": "2026-10",
+      "f": "Setup fee applies",
+      "s": "Weekly",
+      "b": "High volumes, 110+ payment methods, and cash payments at 7-Eleven.",
+      "p": "Shopify, WooCommerce, and Magento. Shopify surcharge: 0.25%.",
+      "t": ["fpx", "duitnow", "global"]
+    },
+    {
+      "n": "Adaptis (iPay88 + eGHL)",
+      "r": "Not published; request a quote",
+      "ratesChecked": "2026-10",
+      "f": "Setup and/or annual fees usually apply",
+      "s": "Around 5 business days",
+      "b": "Broad coverage of local payment methods.",
+      "p": "Check the official website.",
+      "t": ["fpx"]
+    },
+    {
+      "n": "Airwallex",
+      "r": "Cards 1.90% + RM0.50; local methods from 1.4% + RM0.50",
+      "ratesChecked": "2026-10",
+      "f": "No setup or monthly fees",
+      "s": "Check the official website",
+      "b": "Businesses managing multiple currencies.",
+      "p": "Check the official website.",
+      "t": ["global", "nomonthly"]
+    }
+  ],
+  "plans": [
+    {
+      "n": "Stripe (cards or FPX)",
+      "p": 0.03,
+      "fx": 1,
+      "m": 0
+    },
+    {
+      "n": "Billplz Basic (FPX)",
+      "p": 0,
+      "fx": 1.25,
+      "m": 0
+    },
+    {
+      "n": "Billplz Standard (FPX, includes RM999/year)",
+      "p": 0,
+      "fx": 0.75,
+      "m": 83.25
+    },
+    {
+      "n": "HitPay (online FPX)",
+      "p": 0.018,
+      "fx": 0.4,
+      "m": 0
+    },
+    {
+      "n": "Airwallex (local cards)",
+      "p": 0.019,
+      "fx": 0.5,
+      "m": 0
+    },
+    {
+      "n": "Airwallex (local methods)",
+      "p": 0.014,
+      "fx": 0.5,
+      "m": 0
+    },
+    {
+      "n": "SenangPay (estimated)",
+      "p": 0.025,
+      "fx": 0,
+      "m": 50
+    }
+  ]
+}

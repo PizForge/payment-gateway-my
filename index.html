@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Compare Payment Gateways in Malaysia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Compare payment gateways in Malaysia</h1>
+<p class="lead">A quick reference for online business owners covering rates, setup costs, settlement times, and supported payment methods. Filter by your needs.</p>
+<p class="note">Page last updated: <time id="last-updated"></time></p>
+<p><a class="report-button" href="https://github.com/alongfiz96-code/payment-gateway-my/issues/new?template=rate-report.md" target="_blank" rel="noopener noreferrer">Laporkan kadar salah</a></p>
+
+<div class="tools">
+<input id="q" type="search" placeholder="Search gateways..." aria-label="Search gateways">
+<button class="chip" data-f="fpx" aria-pressed="false">FPX</button>
+<button class="chip" data-f="duitnow" aria-pressed="false">DuitNow QR</button>
+<button class="chip" data-f="global" aria-pressed="false">International payments</button>
+<button class="chip" data-f="nomonthly" aria-pressed="false">No monthly fees</button>
+</div>
+
+<div class="wrap">
+<table>
+<thead><tr><th>Gateway</th><th>Rates (estimated)</th><th>Rates last checked</th><th>Fixed fees</th><th>Settlement</th><th>Best for</th><th>Shopify / WooCommerce</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<div id="empty" class="empty" hidden>No matching gateways. Try removing a filter.</div>
+<div id="load-error" class="empty error" role="alert" hidden></div>
+</div>
+
+<section class="calc" aria-labelledby="ch">
+<h2 id="ch" style="margin-top:0">Monthly cost calculator</h2>
+<div class="in">
+<div><label for="sales">Monthly sales (RM)</label><input id="sales" type="number" min="0" value="10000"></div>
+<div><label for="avg">Average transaction value (RM)</label><input id="avg" type="number" min="1" value="100"></div>
+</div>
+<ol id="res"></ol>
+<p class="note" style="margin-bottom:0">Only published rates are included, and each gateway is calculated using just one payment method (FPX or card, as labeled). Fiuu and Adaptis do not publish their rates, so they are excluded. Billplz and some other gateways add 8% SST.</p>
+</section>
+
+<h2>How to choose</h2>
+<ul>
+<li>Local stores with many customers using FPX and DuitNow QR: consider Billplz, HitPay, or SenangPay.</li>
+<li>Businesses with international customers or SaaS developers: consider Stripe or Airwallex. Many merchants combine one global gateway with one local gateway.</li>
+<li>Actual costs depend on setup fees, refund fees, and settlement speed—not just the percentage rate.</li>
+</ul>
+
+<p class="note">Rates are estimates based on public sources as of October 2026 (Airwallex, HitPay, EasyStore, Jumix Design, and others). Some sources are competitor websites, and sources may report different figures (for example, Billplz FPX is listed at RM1.00 to RM1.50), so confirm rates on each gateway's official website before signing up. Shopify Payments is not available in Malaysia, so orders processed through an external gateway incur Shopify's third-party transaction fee.</p>
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
