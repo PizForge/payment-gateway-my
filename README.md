@@ -1,25 +1,25 @@
-# Banding Payment Gateway Malaysia
+# Compare Payment Gateways in Malaysia
 
-Halaman statik untuk membandingkan payment gateway di Malaysia: kadar, yuran tetap, tempoh settlement, kaedah bayaran dan sokongan Shopify/WooCommerce. Ada kalkulator kos bulanan.
+A static page for comparing payment gateways in Malaysia, including rates, fixed fees, settlement times, payment methods, and Shopify/WooCommerce support. Includes a monthly cost calculator.
 
-## Guna
+## Usage
 
-Jalankan folder ini melalui pelayan HTTP setempat kerana halaman mengambil data daripada `data.json`. Dalam VS Code, pasang sambungan **Live Server**, kemudian klik kanan `index.html` dan pilih **Open with Live Server**. Tiada build atau dependency.
+Serve this folder over a local HTTP server because the page loads data from `data.json`. In VS Code, install the **Live Server** extension, then right-click `index.html` and select **Open with Live Server**. No build step or dependencies are required.
 
-Dalam VS Code, pasang sambungan **Live Server** untuk pratonton automatik.
+In VS Code, install the **Live Server** extension for automatic previews.
 
-## Kemas kini data
+## Updating data
 
-Data gateway dan kadar kalkulator disimpan dalam `data.json` masing-masing di bawah `gateways` dan `plans`. Gaya berada dalam `style.css`, manakala logik penapisan dan kalkulator berada dalam `app.js`.
+Gateway data and calculator rates are stored in `data.json` under `gateways` and `plans`, respectively. Styles are in `style.css`, while filtering and calculator logic are in `app.js`.
 
-Kadar adalah anggaran daripada sumber awam (Oktober 2026). Sahkan di laman rasmi setiap gateway sebelum membuat keputusan.
+Rates are estimates based on public sources (October 2026). Confirm them on each gateway's official website before making a decision.
 
-Gunakan butang **Laporkan kadar salah** pada halaman untuk membuka GitHub Issue menggunakan templat laporan kadar.
+Use the **Report an incorrect rate** button on the page to open a GitHub issue using the rate report template.
 
-## Terbitkan dengan GitHub Pages
+## Publish with GitHub Pages
 
 Settings > Pages > Source: `main` branch, folder `/ (root)`.
 
-## Lesen
+## License
 
 MIT

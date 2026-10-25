@@ -1,21 +1,21 @@
-# Arahan untuk Copilot: Banding Payment Gateway Malaysia
+# Copilot Instructions: Compare Payment Gateways in Malaysia
 
-## Tentang projek
-Halaman statik untuk membandingkan payment gateway di Malaysia. Gunakan HTML, CSS, JavaScript biasa dan JSON tanpa framework atau build step.
+## About the project
+A static page for comparing payment gateways in Malaysia. Use plain HTML, CSS, JavaScript, and JSON without frameworks or a build step.
 
-## Struktur data
-- `index.html`: struktur halaman dan kandungan statik.
-- `style.css`: tema gelap biru, susun atur responsif dan gaya fokus papan kekunci.
-- `app.js`: penapisan gateway, kalkulator kos dan pemuatan data.
-- `data.json`: `lastUpdated` menggunakan format `YYYY-MM-DD`, tatasusunan `gateways` untuk jadual dan `plans` untuk kalkulator. Medan gateway: `n` nama, `r` kadar, `ratesChecked` bulan kadar disemak (`YYYY-MM`), `f` yuran tetap, `s` settlement, `b` sesuai untuk, `p` Shopify/WooCommerce, `t` tag penapis. Medan pelan kalkulator: `n` nama, `p` kadar peratus, `fx` yuran setiap transaksi, `m` yuran bulanan.
-- `.github/ISSUE_TEMPLATE/rate-report.md`: templat GitHub Issue untuk laporan kadar yang salah, dipautkan daripada butang pada halaman.
+## Data structure
+- `index.html`: page structure and static content.
+- `style.css`: dark blue theme, responsive layout, and keyboard focus styles.
+- `app.js`: gateway filtering, cost calculator, and data loading.
+- `data.json`: `lastUpdated` uses the `YYYY-MM-DD` format, with `gateways` for the table and `plans` for the calculator. Gateway fields: `n` name, `r` rate, `ratesChecked` month the rate was checked (`YYYY-MM`), `f` fixed fees, `s` settlement, `b` best for, `p` Shopify/WooCommerce, `t` filter tags. Calculator plan fields: `n` name, `p` percentage rate, `fx` fee per transaction, `m` monthly fee.
+- `.github/ISSUE_TEMPLATE/rate-report.md`: GitHub issue template for reporting an incorrect rate, linked from the page button.
 
-## Peraturan
-- Bahasa paparan semasa: Bahasa Inggeris. Kekalkan bahasa ini apabila mengemas kini teks antara muka.
-- JANGAN reka kadar atau fakta. Kalau tak pasti, tulis "Rujuk laman rasmi" atau "Semak laman rasmi".
-- Setiap kadar mesti ada sumber awam dan disemak pada bulan semasa. Nyatakan sumber dalam mesej commit.
-- Kekalkan projek tanpa framework dan dependency build.
-- Kekalkan tema gelap biru, susun atur responsif dan fokus papan kekunci yang jelas.
-- Kekalkan pemuatan `data.json` melalui HTTP; jangan mengarahkan pengguna membuka halaman melalui `file://`.
-- Guna `esc()` apabila memasukkan teks data ke dalam `innerHTML`.
-- Paparkan ralat pemuatan data dengan jelas; jangan sembunyikan kegagalan atau gunakan data gantian senyap.
+## Rules
+- Display language: English. Keep interface text in English when updating it.
+- Never invent rates or facts. If unsure, write "Check the official website."
+- Every rate must have a public source and be checked in the current month. Include the source in the commit message.
+- Keep the project free of frameworks and build dependencies.
+- Preserve the dark blue theme, responsive layout, and clear keyboard focus styles.
+- Keep loading `data.json` over HTTP; do not direct users to open the page using `file://`.
+- Use `esc()` when inserting data text into `innerHTML`.
+- Display data loading errors clearly; do not hide failures or silently use fallback data.

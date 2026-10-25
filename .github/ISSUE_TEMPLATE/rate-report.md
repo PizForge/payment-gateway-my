@@ -1,25 +1,25 @@
 ---
-name: Laporkan kadar yang salah
-about: Laporkan kadar payment gateway yang tidak tepat atau sudah lapuk.
-title: "[Kadar] "
+name: Report an incorrect rate
+about: Report an inaccurate or outdated payment gateway rate.
+title: "[Rate correction] "
 labels: rate correction
 assignees: ""
 ---
 
 ## Gateway
 
-Nama gateway dan pelan:
+Gateway and plan name:
 
-## Maklumat kadar
+## Rate details
 
-- Kadar yang dipaparkan:
-- Kadar yang betul (jika diketahui):
-- Tarikh kadar disemak:
+- Displayed rate:
+- Correct rate (if known):
+- Date the rate was checked:
 
-## Sumber
+## Source
 
-Pautan ke halaman rasmi yang menyatakan kadar:
+Link to the official page showing the rate:
 
-## Maklumat tambahan
+## Additional information
 
-Maklumat lain yang boleh membantu mengesahkan kadar:
+Any other information that may help verify the rate:
